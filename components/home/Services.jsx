@@ -64,7 +64,7 @@ const Services = () => {
     <section className="py-16 bg-[#F9FAFB]" id="services">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold text-[#1E3A5F] mb-4">Our Therapy Services</h2>
-        <p className="text-[#4B5563] max-w-2xl mx-auto mb-12">
+        <p className="text-[#4B5563] font-medium max-w-2xl mx-auto mb-12">
           Explore how hypnotherapy can help you heal, transform, and achieve mental and emotional well-being.
         </p>
 

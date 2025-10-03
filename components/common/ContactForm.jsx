@@ -58,7 +58,7 @@ const ContactForm = () => {
                     <h2 className="text-3xl md:text-4xl font-bold font-secondary text-[#1E3A5F] mb-4">
                         We're Here to Help
                     </h2>
-                    <p className="text-[#4B5563] font-primary leading-relaxed max-w-2xl mx-auto">
+                    <p className="text-[#4B5563] font-primary font-medium leading-relaxed max-w-2xl mx-auto">
                         Have questions about hypnotherapy services, sessions, or our approach?
                         Our team is just a call or email away.
                     </p>
@@ -74,7 +74,7 @@ const ContactForm = () => {
                             <h3 className="text-xl font-semibold font-secondary text-[#1E3A5F] mb-4">
                                 Want to reach out directly?
                             </h3>
-                            <p className="text-[#4B5563] font-primary mb-4">
+                            <p className="text-[#4B5563] font-primary font-normal mb-4">
                                 We're here to answer your questions and connect with you.
                             </p>
 
@@ -88,7 +88,7 @@ const ContactForm = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-sm text-[#4B5563]">Email</p>
+                                        <p className="text-sm text-[#4B5563] font-normal">Email</p>
                                         <p className="font-medium text-[#1E3A5F]">info@hypnotherapy.com</p>
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@ const ContactForm = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-sm text-[#4B5563]">Phone</p>
+                                        <p className="text-sm text-[#4B5563] font-normal">Phone</p>
                                         <p className="font-medium text-[#1E3A5F]">(123) 456-7890</p>
                                     </div>
                                 </div>

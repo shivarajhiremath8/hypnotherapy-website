@@ -51,7 +51,7 @@ const CoreValues = () => {
               <h3 className="text-xl font-semibold text-[#1E3A5F] mb-3">
                 {value.title}
               </h3>
-              <p className="text-[#4B5563] text-sm leading-relaxed">
+              <p className="text-[#4B5563] font-normal text-sm leading-relaxed">
                 {value.description}
               </p>
             </div>
