@@ -9,7 +9,7 @@ import Values from "../components/home/Values";
 const Home = () => {
     return (
         <>
-            <div className="font-sans text-gray-800">
+            <div className="font-primary text-gray-800">
                 <Navbar />
                 <Hero />
                 <Services />

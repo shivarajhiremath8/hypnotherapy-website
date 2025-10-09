@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Slide2 from '../../assets/images/hero1.jpg';
-import Slide3 from '../../assets/images/hero2.png';
+import Slide1 from '../../assets/images/8.jpg';
+import Slide2 from '../../assets/images/hero8.jpg';
+import Slide3 from '../../assets/images/2.jpg';
+import PrimaryButton from '../ui/PrimaryButton';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -8,15 +10,21 @@ const Hero = () => {
   const slides = [
     {
       type: 'image',
-      media: Slide2,
+      media: Slide1,
       title: 'Transform Your Mind, Heal Your Life',
       subtitle: 'Discover the power of hypnotherapy to overcome challenges, reduce stress, and achieve lasting inner peace and well-being.'
     },
     {
       type: 'image',
-      media: Slide3,
+      media: Slide2,
       title: 'Professional Hypnotherapy Services',
       subtitle: 'Expert guidance in migraine relief, anxiety management, sleep improvement, and emotional healing through proven techniques.'
+    },
+    {
+      type: 'image',
+      media: Slide3,
+      title: 'Your Journey to Wellness Starts Here',
+      subtitle: 'Empowering your mind for healing, transformation, and lasting well-being with personalized hypnotherapy sessions.'
     }
   ];
 
@@ -69,6 +77,9 @@ const Hero = () => {
           <p className="text-xl md:text-2xl font-cursive mb-8 max-w-3xl">
             {slides[currentSlide].subtitle}
           </p>
+          <PrimaryButton variant="outline" size="medium" className="px-6 py-3">
+            Get Started Today
+          </PrimaryButton>
         </div>
       </div>
 

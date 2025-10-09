@@ -8,7 +8,9 @@ const ServicesPage = () => {
     return (
         <>
             <NavBar />
-            <Services />
+            <div className="pt-12">
+                <Services />
+            </div>
             <Benefits />
             <Values />
             <Footer />

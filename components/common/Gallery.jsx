@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 const Gallery = ({
     images = [],
     showViewMoreButton = false,
-    title = "Moments at Maggemane",
-    description = "From Maggemane - India's First Certified Humane & Organic Dairy Brand. Pure milk and dairy products born from stress-free cows and ethical farming."
+    title = "Our Story",
+    description = "My journey led me to Hypnotherapy and NLP (Neuro-Linguistic Programming). I experienced firsthand how powerful these methods are—not only in bringing relief from emotional pain, stress, and unhealthy habits, but also in helping people discover clarity, confidence, and lasting inner peace."
 }) => {
     return (
         <div className="py-16 px-4">

@@ -1,4 +1,4 @@
-import Icon from "../../assets/icons/icon_1.svg"; // adjust the path if needed
+import Icon from "../../assets/icons/b2.svg"; // adjust the path if needed
 
 const benefits = [
     "Reduce frequency & intensity of migraines.",

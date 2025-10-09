@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import FacebookIcon from '../../assets/icons/icon_1.svg';
-import InstagramIcon from '../../assets/icons/icon_2.svg';
-import TwitterIcon from '../../assets/icons/icon_3.svg';
-import LinkedInIcon from '../../assets/icons/icon_4.svg';
-import YoutubeIcon from '../../assets/icons/icon_5.svg';
+import { useState } from 'react';
+import FacebookIcon from '../../assets/icons/fb.icon.svg';
+import InstagramIcon from '../../assets/icons/insta.icon.svg';
+import LinkedInIcon from '../../assets/icons/linkedin.icon.svg';
+import TwitterIcon from '../../assets/icons/twitter.icon.svg';
+import YoutubeIcon from '../../assets/icons/yt.icon.svg';
+import PrimaryButton from '../ui/PrimaryButton';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -50,12 +51,12 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="my-6 py-16 px-4">
+        <div className="my-6 py-10 px-4">
             <div className="max-w-6xl mx-auto">
                 {/* Centered Header */}
                 <div className="text-center mb-12"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold font-secondary text-[#1E3A5F] mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1E3A5F] mb-4">
                         We're Here to Help
                     </h2>
                     <p className="text-[#4B5563] font-primary font-medium leading-relaxed max-w-2xl mx-auto">
@@ -80,6 +81,19 @@ const ContactForm = () => {
 
                             {/* Contact Details */}
                             <div className="space-y-4">
+                                {/* Name */}
+                                <div className="flex items-center gap-3">
+                                    <div className="w-10 h-10 bg-[#3A6EA5] rounded-lg flex items-center justify-center">
+                                        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p className="text-sm text-[#4B5563] font-normal">Founder</p>
+                                        <p className="font-medium text-[#1E3A5F]">Nagarjun B | Nagarjun MindAscend</p>
+                                    </div>
+                                </div>
+
                                 {/* Email */}
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-10 bg-[#3A6EA5] rounded-lg flex items-center justify-center">
@@ -89,7 +103,7 @@ const ContactForm = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-[#4B5563] font-normal">Email</p>
-                                        <p className="font-medium text-[#1E3A5F]">info@hypnotherapy.com</p>
+                                        <p className="font-medium text-[#1E3A5F]">nagarjun@mindascendhypnosis.com</p>
                                     </div>
                                 </div>
 
@@ -102,9 +116,10 @@ const ContactForm = () => {
                                     </div>
                                     <div>
                                         <p className="text-sm text-[#4B5563] font-normal">Phone</p>
-                                        <p className="font-medium text-[#1E3A5F]">(123) 456-7890</p>
+                                        <p className="font-medium text-[#1E3A5F]">+91 7993960056</p>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
 
@@ -113,7 +128,7 @@ const ContactForm = () => {
                             <h4 className="text-lg font-medium text-[#1E3A5F] mb-3">Follow us on social media</h4>
                             <div className="flex space-x-3">
                                 <a
-                                    href="https://www.facebook.com/profile.php?id=61578945691715"
+                                    href="https://www.facebook.com/"
                                     className="w-8 h-8 bg-[#3A6EA5] rounded flex items-center justify-center hover:bg-[#1E3A5F] transition-colors duration-300"
                                 >
                                     <img
@@ -123,7 +138,7 @@ const ContactForm = () => {
                                     />
                                 </a>
                                 <a
-                                    href="https://www.instagram.com/milking.org.in/"
+                                    href="https://www.instagram.com/"
                                     className="w-8 h-8 bg-[#3A6EA5] rounded flex items-center justify-center hover:bg-[#1E3A5F] transition-colors duration-300"
                                 >
                                     <img
@@ -133,7 +148,7 @@ const ContactForm = () => {
                                     />
                                 </a>
                                 <a
-                                    href="https://x.com/Milking_dairy"
+                                    href="https://x.com/"
                                     className="w-8 h-8 bg-[#3A6EA5] rounded flex items-center justify-center hover:bg-[#1E3A5F] transition-colors duration-300"
                                 >
                                     <img
@@ -143,7 +158,7 @@ const ContactForm = () => {
                                     />
                                 </a>
                                 <a
-                                    href="https://www.linkedin.com/company/108628770/admin/page-posts/published/"
+                                    href="https://www.linkedin.com/"
                                     className="w-8 h-8 bg-[#3A6EA5] rounded flex items-center justify-center hover:bg-[#1E3A5F] transition-colors duration-300"
                                 >
                                     <img
@@ -153,7 +168,7 @@ const ContactForm = () => {
                                     />
                                 </a>
                                 <a
-                                    href="https://www.youtube.com/@Milking-org-in"
+                                    href="https://www.youtube.com/"
                                     className="w-8 h-8 bg-[#3A6EA5] rounded flex items-center justify-center hover:bg-[#1E3A5F] transition-colors duration-300"
                                 >
                                     <img
@@ -221,10 +236,10 @@ const ContactForm = () => {
                             </div>
 
                             {/* Submit Button */}
-                            <button
+                            <PrimaryButton
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="w-full bg-gradient-to-r from-[#3A6EA5] to-[#1E3A5F] hover:from-[#1E3A5F] hover:to-[#3A6EA5] text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                                className="w-full"
                             >
                                 {isSubmitting ? (
                                     <>
@@ -242,7 +257,7 @@ const ContactForm = () => {
                                         </svg>
                                     </>
                                 )}
-                            </button>
+                            </PrimaryButton>
 
                             {/* Status Messages */}
                             {submitStatus === 'success' && (

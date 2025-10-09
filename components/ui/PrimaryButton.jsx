@@ -1,3 +1,4 @@
+import React from 'react';
 
 const PrimaryButton = ({
     children,
@@ -5,85 +6,45 @@ const PrimaryButton = ({
     type = "button",
     disabled = false,
     size = "medium",
+    variant = "primary",
     className = "",
     icon,
     iconPosition = "left",
+    as = "button",
     ...props
 }) => {
 
-    const sizeStyles = {
-        small: {
-            padding: '8px 16px',
-            fontSize: '14px',
-            gap: '6px'
-        },
-        medium: {
-            padding: '12px 24px',
-            fontSize: '16px',
-            gap: '8px'
-        },
-        large: {
-            padding: '16px 32px',
-            fontSize: '18px',
-            gap: '10px'
-        }
+    const sizeClasses = {
+        small: 'px-4 py-2 text-sm gap-1.5',
+        medium: 'px-6 py-3 text-base gap-2',
+        large: 'px-8 py-4 text-lg gap-2.5'
     }
 
-    const buttonStyles = {
-        background: 'linear-gradient(to top, #7C4098, #9B5AB3)',
-        border: 'none',
-        borderRadius: '8px',
-        color: 'white',
-        fontWeight: '600',
-        cursor: disabled ? 'not-allowed' : 'pointer',
-        transition: 'all 0.3s ease',
-        outline: 'none',
-        opacity: disabled ? 0.6 : 1,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        ...sizeStyles[size]
+    const variantClasses = {
+        primary: 'bg-gradient-to-r from-[#3A6EA5] to-[#2E5780] hover:from-[#3A6EA5] hover:to-[#3A6EA5] text-white shadow-lg hover:shadow-xl',
+        outline: 'bg-transparent border border-white text-white hover:bg-[#3A6EA5] hover:border-[#3A6EA5] hover:text-white shadow-none'
     }
 
-    const iconStyles = {
-        width: sizeStyles[size].fontSize,
-        height: sizeStyles[size].fontSize,
-        flexShrink: 0
-    }
+    const baseClasses = `${variantClasses[variant]} font-semibold rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center ${sizeClasses[size]} ${className}`
 
-    const handleMouseEnter = (e) => {
-        if (!disabled) {
-            e.target.style.transform = 'translateY(-2px)'
-            e.target.style.boxShadow = '0 4px 12px rgba(124, 64, 152, 0.4)'
-        }
-    }
-
-    const handleMouseLeave = (e) => {
-        if (!disabled) {
-            e.target.style.transform = 'translateY(0)'
-            e.target.style.boxShadow = 'none'
-        }
-    }
+    const Component = as
 
     return (
-        <button
-            type={type}
+        <Component
+            type={as === 'button' ? type : undefined}
             onClick={disabled ? undefined : onClick}
             disabled={disabled}
-            style={buttonStyles}
-            className={className}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            className={baseClasses}
             {...props}
         >
             {icon && iconPosition === 'left' && (
-                <span style={iconStyles}>{icon}</span>
+                <span className="flex-shrink-0">{icon}</span>
             )}
             {children}
             {icon && iconPosition === 'right' && (
-                <span style={iconStyles}>{icon}</span>
+                <span className="flex-shrink-0">{icon}</span>
             )}
-        </button>
+        </Component>
     )
 }
 

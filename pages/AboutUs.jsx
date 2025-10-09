@@ -3,13 +3,14 @@ import Navbar from "../components/common/NavBar";
 import Founder from "../components/common/Founder";
 import Values from "../components/home/Values";
 import Gallery from "../components/common/Gallery";
+import Footer from "../components/common/Footer";
 
-import Gallery1 from '../assets/images/hero1.jpg';
-import Gallery2 from '../assets/images/hero2.png';
-import Gallery3 from '../assets/images/hero1.jpg';
-import Gallery4 from '../assets/images/hero2.png';
-import Gallery5 from '../assets/images/hero1.jpg';
-import Gallery6 from '../assets/images/hero2.png';
+import Gallery1 from '../assets/images/9.1.jpg';
+import Gallery2 from '../assets/images/2.jpg';
+import Gallery3 from '../assets/images/8.jpg';
+import Gallery4 from '../assets/images/1.jpg';
+import Gallery5 from '../assets/images/10.jpg';
+import Gallery6 from '../assets/images/4.jpg';
 
 const AboutUs = () => {
     const galleryImages = [
@@ -48,13 +49,16 @@ const AboutUs = () => {
     return (
         <div className="font-sans text-gray-800">
             <Navbar />
-            <Founder />
-            <Values />
-            <Gallery
-                images={galleryImages}
-                showPrimaryButton={true}
-                showViewMoreButton={false}
-            />
+            <div className="pt-12">
+                <Founder />
+                <Values />
+                <Gallery
+                    images={galleryImages}
+                    showPrimaryButton={true}
+                    showViewMoreButton={false}
+                />
+            </div>
+            <Footer />
         </div>
     );
 };
