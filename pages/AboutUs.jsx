@@ -5,12 +5,12 @@ import Values from "../components/home/Values";
 import Gallery from "../components/common/Gallery";
 import Footer from "../components/common/Footer";
 
-import Gallery1 from '../assets/images/9.1.JPG';
-import Gallery2 from '../assets/images/2.JPG';
-import Gallery3 from '../assets/images/8.JPG';
-import Gallery4 from '../assets/images/1.JPG';
-import Gallery5 from '../assets/images/10.JPG';
-import Gallery6 from '../assets/images/4.JPG';
+import Gallery1 from '../assets/images/9.png';
+import Gallery2 from '../assets/images/2.png';
+import Gallery3 from '../assets/images/8.png';
+import Gallery4 from '../assets/images/1.png';
+import Gallery5 from '../assets/images/10.png';
+import Gallery6 from '../assets/images/4.png';
 
 const AboutUs = () => {
     const galleryImages = [
