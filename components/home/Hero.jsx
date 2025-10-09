@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Slide1 from '../../assets/images/8.jpg';
-import Slide2 from '../../assets/images/hero8.jpg';
-import Slide3 from '../../assets/images/2.jpg';
+import { useEffect, useState } from 'react';
+import Slide3 from '../../assets/images/2.png';
+import Slide1 from '../../assets/images/8.png';
+import Slide2 from '../../assets/images/hero8.png';
 import PrimaryButton from '../ui/PrimaryButton';
 
 const Hero = () => {
