@@ -37,7 +37,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com/milking.org.in/"
+                href="https://www.instagram.com/"
                 className="w-8 h-8 hover:opacity-75 transition-opacity duration-300"
                 aria-label="Instagram"
               >
@@ -48,7 +48,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://x.com/Milking_dairy"
+                href="https://x.com/"
                 className="w-8 h-8 hover:opacity-75 transition-opacity duration-300"
                 aria-label="Twitter"
               >
@@ -59,7 +59,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.linkedin.com/company/108628770/admin/page-posts/published/"
+                href="https://www.linkedin.com/"
                 className="w-8 h-8 hover:opacity-75 transition-opacity duration-300"
                 aria-label="LinkedIn"
               >
@@ -70,7 +70,7 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.youtube.com/@Milking-org-in"
+                href="https://www.youtube.com/"
                 className="w-8 h-8 hover:opacity-75 transition-opacity duration-300"
                 aria-label="YouTube"
               >
