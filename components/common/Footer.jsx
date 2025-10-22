@@ -26,7 +26,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://www.facebook.com/profile.php?id=61578945691715"
+                href="https://www.facebook.com/"
                 className="w-8 h-8 hover:opacity-75 transition-opacity duration-300"
                 aria-label="Facebook"
               >
